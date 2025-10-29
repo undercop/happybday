@@ -1,0 +1,317 @@
+@import "tailwindcss";
+/* Add this to your index.css or App.css */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px) rotate(180deg);
+    opacity: 0.8;
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.animate-pulse {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+/* Add these to your existing CSS */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+/* Smooth image loading */
+.slideshow-image {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slideshow-image.loading {
+  opacity: 0;
+}
+
+.slideshow-image.loaded {
+  opacity: 1;
+}
+
+/* Ensure consistent image rendering */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Loading animation for images */
+.image-loading {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+/* Custom animations for the wishes page */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes gentle-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-gentle-pulse {
+  animation: gentle-pulse 2s ease-in-out infinite;
+}
+
+/* Smooth transitions for content */
+.wish-transition {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Glass morphism effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.surprise-container,
+.cat-smirk-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.back-button {
+  background: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background: #e0e0e0;
+}
+
+.smirk-button {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.smirk-button:hover {
+  background: #ff5252;
+  transform: scale(1.05);
+}
+
+.gif-container {
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.cat-gif {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+/* Dark theme base styles */
+.dark-theme {
+  background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 100%);
+  color: #e0e0e0;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Back button dark style */
+.dark-back {
+  background: #2a2a2a;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.dark-back:hover {
+  background: #3a3a3a;
+  border-color: #ff4444;
+  box-shadow: 0 0 15px rgba(255, 68, 68, 0.3);
+}
+
+/* Glowing text effect */
+.glowing-text {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 68, 68, 0.7),
+               0 0 20px rgba(255, 68, 68, 0.5),
+               0 0 30px rgba(255, 68, 68, 0.3);
+  margin-bottom: 40px;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* Dark red button */
+.dark-red {
+  background: linear-gradient(45deg, #8B0000, #B22222);
+  color: white;
+  border: none;
+  padding: 18px 36px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.dark-red:hover {
+  background: linear-gradient(45deg, #B22222, #8B0000);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 0, 0, 0.6);
+}
+
+.dark-red:active {
+  transform: translateY(-1px);
+}
+
+/* GIF container with dark frame */
+.dark-frame {
+  margin: 40px auto;
+  max-width: 500px;
+  padding: 10px;
+  background: linear-gradient(45deg, #2a2a2a, #1a1a1a);
+  border: 2px solid #444;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.2),
+              inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Dark glow effect for GIF */
+.dark-glow {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.dark-glow:hover {
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.5),
+              0 0 40px rgba(255, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+/* Mysterious text styling */
+.mysterious-text {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(42, 42, 42, 0.7);
+  border-left: 4px solid #ff4444;
+  border-radius: 8px;
+  animation: pulse 2s infinite;
+}
+
+.mysterious-text p {
+  margin: 0;
+  font-style: italic;
+  color: #ccc;
+  text-shadow: 0 0 5px rgba(255, 68, 68, 0.3);
+}
+
+/* Pulsing animation for mysterious effect */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 68, 68, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 68, 68, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 68, 68, 0.3);
+  }
+}
+
+/* Container alignment */
+.surprise-container,
+.cat-smirk-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
