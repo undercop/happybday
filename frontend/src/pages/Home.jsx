@@ -131,15 +131,13 @@ const Home = () => {
         
         {/* Subtitle */}
         <p className="text-2xl md:text-3xl text-white opacity-80 mb-12 font-light">
-          To the most amazing girlfriend in the world! 💖
+          To the most cutest and the only cutuuuuu in the world! 💖
         </p>
         
         {/* Love Message */}
         <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 max-w-2xl border border-white/30 mb-12">
           <p className="text-white text-lg md:text-xl leading-relaxed">
-            On your special day, I want you to know how much you mean to me. 
-            You make every moment magical and every day brighter. 
-            May this year bring you endless joy, laughter, and all your heart desires! 🎂🎉
+           i hope u get all the happiness u desire and all ur dreams come true, im always rooting for u 
           </p>
         </div>
 

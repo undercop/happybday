@@ -22,7 +22,7 @@ const Memories = () => {
   const fileInputRef = useRef(null);
   const successTimerRef = useRef(null);
 
-  const API_BASE = 'http://localhost:5000/api';
+  const API_BASE = 'https://happybday-xi.vercel.app/api';
 
   // Fetch memories from MongoDB
   const fetchMemories = async () => {

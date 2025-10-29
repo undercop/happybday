@@ -312,7 +312,7 @@ const Wishes = () => {
   // Fetch memories to get Cloudinary images
   const fetchMemories = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/memories');
+      const response = await axios.get('https://happybday-xi.vercel.app/api/memories');
       setMemories(response.data);
       return response.data;
     } catch (error) {
