@@ -27,8 +27,8 @@ const Memories = () => {
   // Fetch memories from MongoDB
   const fetchMemories = async () => {
     try {
-      console.log('🔄 Fetching memories from:', `${API_BASE}/memories`);
-      const response = await axios.get(`${API_BASE}/memories`);
+      console.log('🔄 Fetching memories from:', `${API_BASE}/api/memories`);
+      const response = await axios.get(`${API_BASE}/api/memories`);
       console.log('✅ Memories fetched:', response.data);
       setMemories(response.data);
       setLoading(false);
