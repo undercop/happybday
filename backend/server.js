@@ -11,7 +11,15 @@ require("dotenv").config();
 const app = express();
 
 // ✅ Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://happybday.vercel.app",  // your frontend domain
+    "http://localhost:5173"          // for local testing
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type"],
+  credentials: true
+}));
 app.use(express.json());
 
 // ✅ Debug Cloudinary Configuration
