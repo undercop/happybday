@@ -99,6 +99,16 @@ const saveToLocal = (fileBuffer, originalName) => {
 };
 
 // ✅ Routes
+app.get("/", (req, res) => {
+  res.json({
+    message: "🎉 Birthday Website API is running!",
+    status: "ok",
+    endpoints: ["/api", "/api/memories", "/api/upload"],
+    cloudinary: process.env.CLOUDINARY_CLOUD_NAME ? "Configured" : "Not configured",
+    storage: process.env.CLOUDINARY_CLOUD_NAME ? "Cloudinary" : "Local",
+  });
+});
+
 app.get("/api", (req, res) => {
   res.json({
     message: "🎉 Birthday Website API is running!",
